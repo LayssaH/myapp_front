@@ -1,6 +1,4 @@
 <script>
-    import {enhance} from '$app/forms';
-    import ListErrors from '$lib/ListErrors.svelte';
     /** @type {import('./$types').PageData} */
     export let data;
 </script>
@@ -14,8 +12,15 @@
         <div class="row">
             <div class="col-md-6 offset-md-3 col-xs-12">
                 <h1 class="text-xs-center">Locations</h1>
-                <p>{data}</p>
-                <button class="btn btn-lg btn-primary pull-xs-right" type="submit">Sign in</button>
+                {#if data.locations?.length === 0}
+                    <div class="article-preview">No locations here... yet.</div>
+                {:else}
+                    <div>
+                        {#each data.locations as location}
+                            <p> {location.filmName}</p>
+                        {/each}
+                    </div>
+                {/if}
             </div>
         </div>
     </div>
