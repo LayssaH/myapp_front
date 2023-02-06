@@ -11,20 +11,19 @@ export const actions = {
 	default: async ({ cookies, request }) => {
 		const data = await request.formData();
 
-		const body = await api.post('users/login', {
-			user: {
-				email: data.get('email'),
-				password: data.get('password')
-			}
-		});
+		const user = {
+			username: data.get('username'),
+			password: data.get('password')
+		};
+
+		const body = await api.post('users/login',user);
 
 		if (body.errors) {
 			return fail(401, body);
 		}
 
-		const value = btoa(JSON.stringify(body.user));
-		cookies.set('jwt', value, { path: '/' });
+		cookies.set('jwt', body.jwt , { path: '/' });
 
-		throw redirect(307, '/');
+		throw redirect(307, '/register');
 	}
 };

@@ -10,6 +10,12 @@
 				<a class="nav-link" class:active={$page.url.pathname === '/'} href="/">Home</a>
 			</li>
 
+			<li class="nav-item">
+				<a href="/locations" class="nav-link" class:active={$page.url.pathname === '/locations'}>
+					Locations
+				</a>
+			</li>
+
 			{#if $page.data.user}
 				<li class="nav-item">
 					<a href="/editor" class="nav-link" class:active={$page.url.pathname === '/editor'}>
