@@ -1,6 +1,12 @@
 <script>
+    import PopupLong from './PopupLong.svelte';
+
     /** @type {import('./$types').PageData} */
     export let data;
+
+    const showPopupLong = () => {
+        open(PopupLong);
+    };
 </script>
 
 <svelte:head>
@@ -16,9 +22,21 @@
                     <div class="article-preview">No locations here... yet.</div>
                 {:else}
                     <div>
-                        {#each data.locations as location}
-                            <p> {location.filmName}</p>
-                        {/each}
+                        <table>
+                            <tr>
+                                <th>Title</th>
+                                <th>Producer</th>
+
+                            </tr>
+                            {#each data.locations as location}
+                                <tr>
+                                    <td>{location.filmName}</td>
+                                    <td>{location.filmProducerName}</td>
+                                    <button on:click={showPopupLong}>+info</button>
+                                </tr>
+                            {/each}
+                        </table>
+
                     </div>
                 {/if}
             </div>

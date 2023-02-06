@@ -24,6 +24,6 @@ export const actions = {
 
 		cookies.set('jwt', body.jwt , { path: '/' });
 
-		throw redirect(307, '/register');
+		throw redirect(307, '/locations');
 	}
 };
