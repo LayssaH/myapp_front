@@ -1,12 +1,6 @@
 <script>
     import {enhance} from '$app/forms';
     import ListErrors from '$lib/ListErrors.svelte';
-
-    /** @type {import('./$types').ActionData} */
-    export let form;
-    /** @type {import('./$types').Actions} */
-    export let locations=undefined;
-
     /** @type {import('./$types').PageData} */
     export let data;
 </script>
@@ -20,6 +14,7 @@
         <div class="row">
             <div class="col-md-6 offset-md-3 col-xs-12">
                 <h1 class="text-xs-center">Locations</h1>
+                <p>{data.locations.length}</p>
                 <button class="btn btn-lg btn-primary pull-xs-right" type="submit">Sign in</button>
             </div>
         </div>
