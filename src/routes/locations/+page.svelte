@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-md-6 offset-md-3 col-xs-12">
                 <h1 class="text-xs-center">Locations</h1>
-                <p>{data.locations.length}</p>
+                <p>{data}</p>
                 <button class="btn btn-lg btn-primary pull-xs-right" type="submit">Sign in</button>
             </div>
         </div>
