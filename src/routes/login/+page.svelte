@@ -46,3 +46,32 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	h1{
+		text-align: center;
+		padding: 10px;
+		width: auto;
+		height: 120px;
+	}
+	button{
+		display: inline-block;
+		background-color: #381506 ;
+		border-radius: 18px;
+		border: 4px  #cccccc;
+		color: #eeeeee;
+		text-align: center;
+		font-size: 13px;
+		width: 100px;
+		transition: all 0.5s;
+		cursor: context-menu;
+		margin: 10px;
+	}
+	button:hover {
+		background-color: chocolate;
+	}
+	a{
+		color: #381506;
+	}
+
+</style>

@@ -57,3 +57,55 @@
         </div>
     </div>
 </div>
+
+<style>
+    h1{
+        text-align: center;
+        padding: 10px;
+        width: auto;
+        height: 120px;
+    }
+    button{
+        display: inline-block;
+        background-color: #381506 ;
+        border-radius: 18px;
+        border: 4px  #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 13px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: context-menu;
+        margin: 10px;
+    }
+    button:hover {
+        background-color: chocolate;
+    }
+    body{
+        background-color: #f2d689;
+        z-index: 1;
+    }
+    #titre_column th {
+        text-align: center;
+        background-color: #D4EFDF;
+        border-spacing: 25px;
+        font-weight: 900;
+        border-style: groove;
+    }
+    #contenu th{
+        border: 9px  ;
+        font-weight: 300 ;
+        color: #4D5656;
+        padding: 8px;
+        text-align: left;
+    }
+    table {
+        width: 100%;
+    }
+    th {
+        background-color: chocolate;
+    }
+    td {
+        background-color: antiquewhite;
+    }
+</style>

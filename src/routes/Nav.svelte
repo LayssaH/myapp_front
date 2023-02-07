@@ -4,7 +4,6 @@
 
 <nav class="navbar navbar-light">
 	<div class="container">
-		<a class="navbar-brand" href="/">conduit</a>
 		<ul class="nav navbar-nav pull-xs-right">
 			<li class="nav-item">
 				<a class="nav-link" class:active={$page.url.pathname === '/'} href="/">Home</a>
@@ -15,16 +14,10 @@
 				</a>
 			</li>
 
-			<li class="nav-item">
-				<a href="/locationdetail" class="nav-link" class:active={$page.url.pathname === '/locationdetail'}>
-					Details
-				</a>
-			</li>
-
 			{#if $page.data.user}
 				<li class="nav-item">
 					<a href="/settings" class="nav-link" class:active={$page.url.pathname === '/settings'}>
-						<i class="ion-gear-a" />&nbsp;Settings
+						<i class="ion-gear-a" />&nbsp;Log out
 					</a>
 				</li>
 			{:else}
