@@ -13,8 +13,3 @@ export async function load({locals}) {
     }
     return {locations}
 }
-
-export const actions = {
-    default: async ({ cookies, request }) => {
-    }
-};
