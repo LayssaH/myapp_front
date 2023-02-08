@@ -1,23 +1,13 @@
-# ![RealWorld Example App](logo.png)
+Pour run le front:
 
-> ### [Svelte](https://github.com/sveltejs/svelte) codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
-
-### [Demo](https://realworld.svelte.dev)&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)
-
-This codebase was created to demonstrate a fully fledged fullstack application built with SvelteKit including CRUD operations, authentication, routing, pagination, and more.
-
-For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
-
-## Running locally
-
-```bash
 npm install
 npm run dev
-```
+pour lancer le Frontend.
 
-To build and start in prod mode:
+Si un utilisateur random s'inscrit, cela le redirige directement vers la page login avec laquelle il doit s'identifier pour accéder aux 
+fonctionnalités du site telle que les lieux de tournage (page "locations") Ainsi, si l'utilisateur n'est pas inscrit, il ne peut pas y accéder
+et sera redirigé vers "login". 
+L'utilisateur inscrit peut voir les lieux et peut cliquer  sur le bouton "Détails" à côté du lieu correspondant pour ouvrir une modale contenant des détails, 
+afin que le site soit utile. 
 
-```bash
-npm run build
-npm run preview
-```
+J'ai donc terminé les 3 premières User Stories.
