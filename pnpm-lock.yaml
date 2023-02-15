@@ -7,8 +7,12 @@ specifiers:
   prettier: ^2.7.1
   prettier-plugin-svelte: ^2.8.0
   svelte: ^3.54.0
+  svelte-simple-modal: ^1.5.2
   typescript: ^4.9.4
   vite: ^4.0.0
+
+dependencies:
+  svelte-simple-modal: 1.5.2_svelte@3.54.0
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0_@sveltejs+kit@1.0.0
@@ -942,10 +946,17 @@ packages:
       svelte: 3.54.0
     dev: true
 
+  /svelte-simple-modal/1.5.2_svelte@3.54.0:
+    resolution: {integrity: sha512-kQ+9/bonxMMJe6dGTCPXBkYQQ4zF8rqqPp+PvTWOJB8QtB+Z0S/h7ZJRDZOAnkXTUClwd+Qmb2HHTIXVkjlSvA==}
+    peerDependencies:
+      svelte: ^3.31.2
+    dependencies:
+      svelte: 3.54.0
+    dev: false
+
   /svelte/3.54.0:
     resolution: {integrity: sha512-tdrgeJU0hob0ZWAMoKXkhcxXA7dpTg6lZGxUeko5YqvPdJBiyRspGsCwV27kIrbrqPP2WUoSV9ca0gnLlw8YzQ==}
     engines: {node: '>= 8'}
-    dev: true
 
   /tar/6.1.13:
     resolution: {integrity: sha512-jdIBIN6LTIe2jqzay/2vtYLlBHa3JF42ot3h1dW8Q0PaAG4v8rm0cvpVePtau5C6OKXGGcgO9q2AMNSWxiLqKw==}
